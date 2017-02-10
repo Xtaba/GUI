@@ -1,12 +1,13 @@
-package hamine;
-import javax.swing.JFrame;
+package inheretance;
 
-public class apples {
+class apples {
 	public static void main(String[] args){
-		tuna ehsun = new tuna();
-		ehsun.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		ehsun.setSize(350, 100);
-		ehsun.setVisible(true);
+		food ehsun[] = new food[2]; //food type
+		ehsun[0] = new potpie();
+		ehsun[1] = new tuna();
 		
-	}
+		for(int x=0;x<2;++x){
+			ehsun[x].eat(); //loop through every object and call eat method 
+		}
+ 	}
 }
