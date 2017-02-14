@@ -1,11 +1,18 @@
-import javax.swing.JFrame;//GUI
-
-public class GUI2 {
-	public static void main(String[] args){
+package inheretance;
+public class GUI2{
+	public static void main(String args[]){
 		
-	tunaa2 ehsun = new tunaa2();
-	ehsun.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	ehsun.setSize(275,180);
-	ehsun.setVisible(true);
+		String a = "apples";
+		String b = "EHSUN";		
+		String c = "EHSUN";	
+		System.out.println(a.length());
+		
+		if(a.equals("apples")){
+			System.out.println("it equals apples!");
+			
+		}
+		if(b.equals(c)){
+			System.out.println("Ehsoon match!");
+		}
 	}
 }
