@@ -1,13 +1,18 @@
 package inheretance;
 
-class apples {
+class apples{
 	public static void main(String[] args){
-		food ehsun[] = new food[2]; //food type
-		ehsun[0] = new potpie();
-		ehsun[1] = new tuna();
 		
-		for(int x=0;x<2;++x){
-			ehsun[x].eat(); //loop through every object and call eat method 
+		Animal[] thelist = new Animal[2];//main aspect of polymorphsim is putting objects into an array and loop through it 
+		dog d = new dog();
+		fish f = new fish();
+		
+		thelist[0] =d;
+		thelist[1] =f;
+		
+		for (Animal x: thelist){
+			x.noise();
+			
 		}
- 	}
+	}
 }
